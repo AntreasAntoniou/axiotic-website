@@ -42,4 +42,3 @@
 *   **MAML++:** A stable, user-friendly framework for meta-learning.
 *   **Kubejobs:** Python tooling for simplifying Kubernetes cluster management.
 *   **DAGAN:** Data Augmentation Generative Adversarial Networks for low-data regimes.
-

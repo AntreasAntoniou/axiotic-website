@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    const response = await fetch('content.yaml');
+    const response = await fetch('content.yaml?v=' + new Date().getTime());
     const yamlText = await response.text();
     const content = jsyaml.load(yamlText);
 
