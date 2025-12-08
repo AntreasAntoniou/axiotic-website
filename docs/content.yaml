@@ -15,7 +15,7 @@ site:
 
 hero:
   title: "Beyond Scaling: Smarter Learning, Not Bigger Models"
-  subtitle_primary: "Axiotic.ai creates a tight synergy between a white‑glove consulting practice and an open research lab: we don’t believe in ever‑bigger models; we believe in better architectures, learning tasks, and training algorithms—and in shipping systems that actually work."
+  subtitle_primary: "Axiotic creates a tight synergy between a white‑glove consulting practice and an open research lab: we don’t believe in ever‑bigger models; we believe in better architectures, learning tasks, and training algorithms—and in shipping systems that actually work."
   subtitle_secondary: "We believe intelligence emerges from structure, interaction, and information — not from piling more parameters on a transformer."
   cta_primary:
     text: "Request Consulting"
