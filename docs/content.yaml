@@ -14,8 +14,9 @@ site:
       href: "#contact-form"
 
 hero:
-  title: "Beyond Scaling through Smarter Learning"
-  subtitle_primary: "Axiotic AI delivers research‑led consulting. You’re not buying old patterns; you’re buying frontier‑shaped systems and the confidence to own and improve them."
+  title_line1: "Beyond Scaling through Smarter Learning"
+  title_line2: "Not Bigger Models"
+  subtitle_primary: "Axiotic AI is a frontier research lab powering a concierge-quality AI consulting practice. You're not buying outdated methods; you're buying frontier‑shaped systems and the confidence to own and improve them."
   cta_primary:
     text: "Request Consulting"
     href: "#consulting"

@@ -19,6 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
     <script defer src="particles-init.js"></script>
     <script defer src="content-loader.js"></script>
+    <script defer src="form-handler.js"></script>
   </head>
   <body class="bg-slate-900 text-slate-50 font-[Inter]">
     <div id="particles-js"></div>
@@ -35,12 +36,12 @@
           class="flex items-center gap-2 text-base font-semibold"
         >
           <img src="images/logo-no-name.png" alt="Axiotic" class="h-8 w-auto rounded-full">
-          <span class="tracking-tight" data-key="site.nav.brand">Axiotic.ai</span>
+          <span class="tracking-tight" data-key="site.nav.brand">Axiotic AI</span>
         </a>
         <div class="hidden sm:flex items-center gap-6 text-sm text-slate-200">
-          <a href="#lab" class="hover:text-amber-300 transition" data-key="site.nav.links.0.text">Research Lab</a>
+          <a href="#lab" class="hover:text-amber-300 transition" data-key="site.nav.links.0.text">Research</a>
           <a href="#consulting" class="hover:text-amber-300 transition" data-key="site.nav.links.1.text"
-            >White Glove Consulting</a
+            >Consulting</a
           >
           <a href="#team" class="hover:text-amber-300 transition" data-key="site.nav.links.2.text">Team</a>
           <a 
@@ -59,11 +60,14 @@
       <section class="min-h-screen flex items-center justify-center pt-20">
         <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
           <h1
-            class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight gradient-text"
-            data-aos="fade-up"
-            data-key="hero.title"
+            class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight"
           >
-            Beyond Scaling: Smarter Learning, Not Bigger Models
+            <span class="block text-white" data-aos="fade-up" data-key="hero.title_line1">
+              Beyond Scaling through Smarter Learning
+            </span>
+            <span class="block text-amber-300/70 mt-2" data-aos="fade-up" data-aos-delay="200" data-key="hero.title_line2">
+              Not Bigger Models
+            </span>
           </h1>
           <p 
             class="text-sm sm:text-base text-slate-200 max-w-2xl mx-auto"
@@ -71,11 +75,7 @@
             data-aos-delay="100"
             data-key="hero.subtitle_primary"
           >
-            Axiotic.ai creates a tight synergy between a white‑glove
-            consulting practice and an open research lab: we don't believe in
-            ever‑bigger models; we believe in better architectures, learning
-            tasks, and training algorithms—and in shipping systems that actually
-            work.
+            Axiotic.ai is a frontier research lab powering a research‑led consulting practice for enterprise AI. You're not buying outdated methods; you're buying frontier‑shaped systems and the confidence to own and improve them.
           </p>
 
           <div
@@ -247,26 +247,26 @@
               <p class="text-xs text-slate-400 mb-6" data-key="consulting.contact.subtitle">
                 Share your email; we’ll follow up with a short, focused call.
               </p>
-              <form class="space-y-4">
+              <form class="space-y-4" id="consultation-form">
                 <div>
                   <label for="email" class="sr-only">Email</label>
-                  <input type="email" id="email" required placeholder="Email (required)" 
+                  <input type="email" id="email" name="email" required placeholder="Email (required)" 
                     class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:ring-2 focus:ring-amber-400 outline-none transition"
                   >
                 </div>
                 <div>
                   <label for="name" class="sr-only">Name</label>
-                  <input type="text" id="name" placeholder="Name (optional)" 
+                  <input type="text" id="name" name="name" placeholder="Name (optional)" 
                     class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:ring-2 focus:ring-amber-400 outline-none transition"
                   >
                 </div>
                 <div>
                   <label for="notes" class="sr-only">Notes</label>
-                  <textarea id="notes" rows="2" placeholder="Short description (optional)" 
+                  <textarea id="notes" name="notes" rows="2" placeholder="Short description (optional)" 
                     class="w-full rounded-lg border border-slate-700 bg-slate-950 px-4 py-3 text-sm text-slate-100 focus:ring-2 focus:ring-amber-400 outline-none transition"
                   ></textarea>
                 </div>
-                <button type="submit" class="w-full rounded-lg bg-amber-400 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-amber-300 transition shadow-lg hover:shadow-amber-400/20" data-key="consulting.contact.button">
+                <button type="submit" class="w-full rounded-lg bg-amber-400 px-6 py-3 text-sm font-bold text-slate-950 hover:bg-amber-300 transition shadow-lg hover:shadow-amber-400/20 disabled:opacity-50 disabled:cursor-not-allowed" data-key="consulting.contact.button">
                   Request Free Consultation
                 </button>
               </form>

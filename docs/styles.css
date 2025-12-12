@@ -176,6 +176,13 @@ body {
   letter-spacing: -0.04em;
 }
 
+.gradient-text {
+  background: linear-gradient(135deg, #facc15 0%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .mission {
   position: relative;
   margin: 0 0 8px;
